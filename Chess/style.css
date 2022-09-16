@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*CSS variables*/
+
+
+h1{
+    text-align: center;
+}
+
+.Box1{
+    background-color: black;
+    height: 100px;
+    width: 100px;
+}
+
+.Box2{
+    background-color: white;
+    height: 100px;
+    width: 100px;
+}
