@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manipulation</title>
+</head>
+<body>
+    <ul>
+        <li>apple</li>
+        <li>mango</li>
+        <li>banana</li>
+    </ul>
+    <script>
+        //CHILDREN
+        // console.log(document.body)
+        // console.log(document.head)
+        console.log(document.children)//using symbol. iterartor thats why looks like array
+        //for traversing childer node
+        // for(Node of document.body.children){
+        //     console.log(document.body.children)
+        // }
+        // console.log(document.body.firstChild)
+        // console.log(document.body.lastChild)
+        // console.log(document.body.firstElementChild)
+        // console.log(document.body.lastElementChild)
+        // const trav=Array.from(document.body.children)
+        // console.log(trav)
+        //////////////////////////////////////////////////////////////////
+
+        //SIBLINGS
+        const ultag=document.body.children[0]
+        const firstli=ultag.children[1]
+    </script>
+</body>
+</html>
