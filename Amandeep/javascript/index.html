@@ -7,16 +7,52 @@
     <title>Dom Manipulation</title>
 </head>
 <body>
-    <ul>
-        <li>apple</li>
-        <li>mango</li>
-        <li>banana</li>
+    <ul id="element">
+        <li class="pop">apple</li>
+        <li class="lop">mango</li>
+        <li class="fof">banana</li>
     </ul>
+    <!-- <table>
+        <tr>
+            <td>one</td>
+            <td>two</td>
+        </tr>
+        <tr>
+            <td>three</td>
+            <td>four</td>
+        </tr>
+    </table> -->
+    <!-- <table border="3px">
+        <tr>
+            <td>1.1</td>
+            <td>1.2</td>
+            <td>1.3</td>
+            <td>1.4</td>
+        </tr>
+        <tr>
+            <td>2.1</td>
+            <td>2.2</td>
+            <td>2.3</td>
+            <td>2.4</td>
+        </tr>
+        <tr>
+            <td>3.1</td>
+            <td>3.2</td>
+            <td>3.3</td>
+            <td>3.4</td>
+        </tr>
+        <tr>
+            <td>4.1</td>
+            <td>4.2</td>
+            <td>4.3</td>
+            <td>4.4</td>
+        </tr>
+    </table> -->
     <script>
         //CHILDREN
         // console.log(document.body)
         // console.log(document.head)
-        console.log(document.children)//using symbol. iterartor thats why looks like array
+        // console.log(document.children)//using symbol. iterartor thats why looks like array
         //for traversing childer node
         // for(Node of document.body.children){
         //     console.log(document.body.children)
@@ -27,11 +63,46 @@
         // console.log(document.body.lastElementChild)
         // const trav=Array.from(document.body.children)
         // console.log(trav)
-        //////////////////////////////////////////////////////////////////
+        //******************************************************************************
 
         //SIBLINGS
-        const ultag=document.body.children[0]
-        const firstli=ultag.children[1]
+        // const ultag=document.body.children[0]
+        // const firstli=ultag.children[0]
+        // const secondli=ultag.children[1]
+        // console.log(secondli.previousElementSibling)
+        // console.log(firstli.nextElementSibling.textContent)
+        //******************************************************************************
+
+        //TABLE DOM MANIPULATION
+        // const tdata=document.body.children[1]
+        // console.log(tdata.tBodies[0].rows[0].cells[1].textContent)
+        // console.log(tdata.tBodies[0].rows[0].cells[1].style="background-color:blue")
+        // .......................................................................
+        // const tvalue=document.body.children[1]
+        // console.log(tvalue.tBodies[0].rows[0].cells[0].style="background-color:red")
+        // console.log(tvalue.tBodies[0].rows[0].cells[1].style="background-color:yellow")
+        // console.log(tvalue.tBodies[0].rows[0].cells[2].style="background-color:purple")
+        // console.log(tvalue.tBodies[0].rows[0].cells[3].style="background-color:green")
+        // console.log(tvalue.tBodies[0].rows[1].cells[0].style="background-color:pink")
+        //******************************************************************************
+
+        // ID SEARCH
+        // const ulstyle=document.getElementById("element")
+        // ulstyle.style.backgroundColor="yellow"
+        // ulstyle.style.color="red"
+        // listItem=document.getElementsByClassName("fof")
+        // listItem.style.backgroundColor="purple"
+        //******************************************************************************
+
+        //Query selector
+        // const maal=document.querySelector('.fof')
+        // const maal=document.querySelector('#element')
+        //to see a last child
+        // const maal=document.querySelectorAll('ul > li:last-child')
+        const maal=document.querySelectorAll('ul > li:nth-child(2)')
+        console.log(maal[0].textContent)
+        //query selector is bassically static
+        //getelement by id is change during runtime 
     </script>
 </body>
 </html>
