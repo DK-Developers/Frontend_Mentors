@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="clckbtn" onclick="alert('paaji dhiyaan kiddr aaaw')">
+        click me
+    </button>
+    <script>
+
+        //EVENTS::::::::::::::::
+        // clckbtn.onclick=function(){
+        //     alert("lakhwinder paaaji")
+        // }
+        function callme(){
+            alert("thanks for watching")
+        }
+        clckbtn.onclick=callme
+
+        clckbtn.addEventListener('click',callme)
+        clckbtn.addEventListener('click',function(){
+            alert("thanks")
+        })
+    </script>
+</body>
+</html>
