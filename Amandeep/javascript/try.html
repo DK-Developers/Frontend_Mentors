@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nop{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+        }
+        .btn{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+        }
+    </style>
+</head>
+<body style="background-color: black;">
+    <img id="bulb" class="nop" src="img/bulb_off.png" width="20%" alt="">
+    <button id="a" class="btn">turn on</button>
+    <script>
+        let bulb=document.getElementById('bulb')
+        let fuf=document.getElementById('a')
+        fuf.addEventListener('click',bonjor)
+        function bonjor(e){
+            bulb.src="img/bulb_on.jpg"
+        }
+    </script>
+</body>
+</html>
