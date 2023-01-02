@@ -1,3 +1,4 @@
-first all you have to do install xampp  "https://www.apachefriends.org/download.html" from chrome site 
-create php file in htdocs folder
-name the file and create your php works
+1) vardump is used to export the varaible which we have deifned for arrays.
+2) consonent can not change there values through out the program once we define it
+ex: define("games","dragon ball z");
+    echo games;
